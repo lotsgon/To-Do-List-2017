@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{023759FD-2CC9-4DBF-9721-000D8BF230E8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TrainingTask</RootNamespace>
+    <AssemblyName>TrainingTask</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\ClearTaskListCommand.cs" />
+    <Compile Include="Commands\EditTask\SetActiveTaskCommand.cs" />
+    <Compile Include="Menus\IMenuOption.cs" />
+    <Compile Include="Commands\ExitCommand.cs" />
+    <Compile Include="Commands\EditTask\EditTags\AddTaskTagsCommand.cs" />
+    <Compile Include="Utilities\TaskExtensions.cs" />
+    <Compile Include="Utilities\ConsoleUtilities.cs" />
+    <Compile Include="Commands\CreateTaskCommand.cs" />
+    <Compile Include="Commands\DeleteTaskCommand.cs" />
+    <Compile Include="Commands\EditTask\EditTags\DeleteTaskTagsCommand.cs" />
+    <Compile Include="Commands\EditTask\EditTaskDescriptionCommand.cs" />
+    <Compile Include="Commands\EditTask\EditTaskTitleCommand.cs" />
+    <Compile Include="Commands\Class\Command.cs" />
+    <Compile Include="Menus\Menu.cs" />
+    <Compile Include="Commands\LoadTasksCommand.cs" />
+    <Compile Include="Commands\MarkTaskCommand.cs" />
+    <Compile Include="Commands\OrderTasksCommand.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Commands\SaveTasksCommand.cs" />
+    <Compile Include="Commands\ShowTasks\ShowAllTasksCommand.cs" />
+    <Compile Include="Commands\ShowTasks\ShowCompletedTasksCommand.cs" />
+    <Compile Include="Commands\ShowTasks\ShowIncompleteTasksCommand.cs" />
+    <Compile Include="Commands\ShowTasks\ShowTaggedTasksCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\TaskManager.vbproj">
+      <Project>{35cb8350-580f-47ce-bb1b-a35f1b89e431}</Project>
+      <Name>TaskManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

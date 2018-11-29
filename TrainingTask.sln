@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomsAwesomeTodoApp.Console", "TrainingTask\TomsAwesomeTodoApp.Console.csproj", "{023759FD-2CC9-4DBF-9721-000D8BF230E8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TaskManager", "ClassLibrary\TaskManager.vbproj", "{35CB8350-580F-47CE-BB1B-A35F1B89E431}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "To Do List Manager 2017", "WpfApp\To Do List Manager 2017.vbproj", "{3C0A2C0A-4B5E-4C2A-A146-5FDEE20A4959}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{023759FD-2CC9-4DBF-9721-000D8BF230E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023759FD-2CC9-4DBF-9721-000D8BF230E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023759FD-2CC9-4DBF-9721-000D8BF230E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023759FD-2CC9-4DBF-9721-000D8BF230E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35CB8350-580F-47CE-BB1B-A35F1B89E431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CB8350-580F-47CE-BB1B-A35F1B89E431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CB8350-580F-47CE-BB1B-A35F1B89E431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CB8350-580F-47CE-BB1B-A35F1B89E431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0A2C0A-4B5E-4C2A-A146-5FDEE20A4959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0A2C0A-4B5E-4C2A-A146-5FDEE20A4959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0A2C0A-4B5E-4C2A-A146-5FDEE20A4959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0A2C0A-4B5E-4C2A-A146-5FDEE20A4959}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
